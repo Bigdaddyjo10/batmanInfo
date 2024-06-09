@@ -9,7 +9,7 @@
     <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="debug">
     <!-- ANCHOR navbar -->
     <header class="sticky-top hc">
       <div class="container-fluid">
@@ -24,28 +24,39 @@
         <!-- NOTE the car needs to look better -->
         <div class="container-fluid img-bHind-card">
           <div class="row d-flex justify-content-center">
-            <div class="col-md-4 m-5 p-3">
-              <div class="card" style="width: 18rem">
-                <div class="card-body card-color">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item card-color">An item</li>
-                  <li class="list-group-item card-color">A second item</li>
-                  <li class="list-group-item card-color">A third item</li>
-                </ul>
-                <div class="card-body card-color">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
+            <div class="col-md-4">
+              <div class="m-5 p-3">
+                <p class="text-light">Side kick card</p>
+                <div class="container card-color d-block card-body ">
+                  <div class="row">
+                    <div class=" mx-2 text-light fs-3">
+                        <p>card title</p>
+                    </div>
+                  </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="mx-2 justify-content-center">
+                            <input class="form-control " type="text" placeholder="Name">
+                            <input class="form-control my-2  "type="text" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="input-group">
+                          <input type="text" class="form-control my-2 m-1" placeholder="Phone">
+                          <input type="text" class="form-control m-1 my-2" placeholder="ext">
+                        </div>
+                        <div class="input-group my-2 justify-content-center">
+                          <input class="form-control m-1" aria-label="With textarea" placeholder="message">
+                        </div>
+                      </div>
+                    </div>
               </div>
-            </div>
-            <div class="col-md-5">
+          </div>
+          <div class="col-md-7">
+            <div class="py-5">
               <p class="text-warning-emphasis text-center py-5 fw-bold shadow-lg">
                 You will be vengeance! You will be the night! You will meet BATMAN! <br />
-                as his new sitkick.
-              </p>
+                as his new sitkick.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -112,16 +123,16 @@
               </div>
             </div>
             <div class="col-md-4 order-3">
-                <div class="justify-content-center py-2 shadow-lg d-flex align-content-center flex-wrap text-center background shadow">
+              <div class="justify-content-center py-2 shadow-lg d-flex align-content-center flex-wrap text-center background shadow">
                 <p>TWO FACE</p>
                 <p>"You either die a hero or you live long enough to see yourself become the villain." "The night is darkest just before the dawn. And I promise you, the dawn is coming." "Why should I hide who I am?"</p>
-              </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- ANCHOR bottom img -->
+      </div>
+    </section>
+    <!-- ANCHOR bottom img -->
       <section>
         <div class="container-fluid">
           <div class="row">
