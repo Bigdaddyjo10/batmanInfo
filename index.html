@@ -7,14 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css" />
     <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Shavian&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
+    <!-- FIXME we need to import and use a custom font (google font are great) Double check the Thursday lecture, there should be an import link AND a css rule that is used and applies it -->
   </head>
   <body>
     <!-- ANCHOR navbar -->
     <header class="sticky-top hc">
       <div class="container-fluid">
         <div class="row">
-          <p class="fs-2 px-0"><i class="mdi mdi-bat fs-1 mdi-spin "></i>GothamNights</p>
+          <p class="fs-2 px-0"><i class="mdi mdi-bat fs-1 mdi-spin  noto-sans-shavian-regular "></i>GothamNights</p>
         </div>
       </div>
     </header>
@@ -40,7 +45,7 @@
                           </div>
                         </div>
                         <div class="input-group mt-2">
-                          <input type="text" class="form-control " placeholder="Phone">
+                          <input type="text" class="form-control" placeholder="Phone">
                           <input type="text" class="form-control " placeholder="ext">
                         </div>
                         <div class="input-group my-2"><textarea placeholder="message" class="form-control" aria-label=" textarea"></textarea>
@@ -60,7 +65,7 @@
           </div>
           <div class="col-md-7">
             <div class="py-5">
-              <p class="text-warning-emphasis text-center py-5 fw-bold shadow-lg">
+              <p class="  d-none d-md-block text-warning-emphasis text-center py-5 fw-bold shadow-lg">
                 You will be vengeance! You will be the night! You will meet BATMAN! <br />
                 as his new sitkick.</p>
               </div>
@@ -71,14 +76,16 @@
       <!-- ANCHOR info + card spill -->
       <section>
         <div class="container-fluid">
+          <!-- FIXME the order of these cols need to change on mobile -->
           <div class="row bg-dark">
-            <div class="col-md-4 text-light m-2">
+            <div class="col-md-4 text-light m-2 order-md-1 order-2  " >
               <p class="fs-3">Lorem t amet consectetur.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vel.</p>
             </div>
-            <div class="col-md-7 my-5 py-5">
-              <div class="position-absolute">
-                <div class="card w-100">
+            <!-- FIXME this card needs to not spill on mobile screens. Think of it mobile first. how can I apply the spill when the screen gets big enough? or "turn on" a class for larger screens -->
+            <div class="col-md-7 my-0 my-md-5 py-0 py-5 order-md-2 order-1">
+            <div class="position-relative card-spill">
+                <div class="card card-spill ">
                   <div class="card-body">
                     <p class="card-title fs-2">Batgear</p>
                     <p><i class="mdi mdi-motorbike fs-2"></i> Lorem ipsum dolor sit.</p>
@@ -96,7 +103,7 @@
         <div class="container my-5 py-4 shadow-lg">
           <div class="row py-5">
             <div class="col-md-3">
-              <img class="img-fluid shadow-lg" src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmF0bWFufGVufDB8fDB8fHww" alt="" />
+              <img class="img-fluid  shadow-lg order-md-3 order-2" src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmF0bWFufGVufDB8fDB8fHww" alt="" />
             </div>
             <div class="col-md-8">
               <div class="py-5">
@@ -115,21 +122,21 @@
       </section>
       <!-- ANCHOR criminal card -->
       <section>
-        <div class="container-fluid">
-          <div class="row">
+        <div class="container-fluid py-2 my-md-0">
+          <div class="row d-flex align-items-center">
             <div class="col-md-4 order-1">
               <div class="justify-content-center py-2  shadow-lg d-flex align-content-center flex-wrap text-center background shadow">
                 <p>SCARECROW</p>
                 <p>"Look at what your drugs did to my customers " "Buyer beware. I told you my compound would take you places. I never said they'd be places you wanted to go."</p>
               </div>
             </div>
-            <div class="col-md-4 order-md-1">
+            <div class="col-md-4 order-md-1 py-2 my-md-0">
               <div class="justify-content-center py-3 shadow-lg d-flex align-content-center text-center flex-wrap background shadow border border-2 shadow-lg">
                 <p class="fs-2">🃏 JOKER 🃏</p>
                 <p>Smile, because it confuses people. Smile, because it's easier than explaining what is killing you inside. As you know, madness is like gravity...all it takes is a little push..</p>
               </div>
             </div>
-            <div class="col-md-4 order-3">
+            <div class="col-md-4 order- py-2 my-md-03">
               <div class="justify-content-center py-2 shadow-lg d-flex align-content-center flex-wrap text-center background shadow">
                 <p>TWO FACE</p>
                 <p>"You either die a hero or you live long enough to see yourself become the villain." "The night is darkest just before the dawn. And I promise you, the dawn is coming." "Why should I hide who I am?"</p>

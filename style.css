@@ -27,12 +27,17 @@
   height: 20vh;
 }
 
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
+.noto-sans-shavian-regular {
+  font-family: "Noto Sans Shavian", sans-serif;
   font-weight: 400;
-  font-style: bold;
+  font-style: normal;
 }
 
 p {
-  font-family: bebas-neue-regular;
+  font-family: noto-sans-shavian-regular;
+}
+@media screen and (max-width: 767.98px) {
+  .card-spill {
+    position: absolute;
+  }
 }
