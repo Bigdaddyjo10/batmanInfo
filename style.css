@@ -36,8 +36,8 @@
 p {
   font-family: noto-sans-shavian-regular;
 }
-@media screen and (max-width: 767.98px) {
-  .card-spill {
+@media screen and (min-width: 767.98px) {
+  .min-card {
     position: absolute;
   }
 }

@@ -12,7 +12,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Shavian&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css" />
-    <!-- FIXME we need to import and use a custom font (google font are great) Double check the Thursday lecture, there should be an import link AND a css rule that is used and applies it -->
   </head>
   <body>
     <!-- ANCHOR navbar -->
@@ -76,7 +75,6 @@
       <!-- ANCHOR info + card spill -->
       <section>
         <div class="container-fluid">
-          <!-- FIXME the order of these cols need to change on mobile -->
           <div class="row bg-dark">
             <div class="col-md-4 text-light m-2 order-md-1 order-2  " >
               <p class="fs-3">Lorem t amet consectetur.</p>
@@ -84,15 +82,11 @@
             </div>
             <!-- FIXME this card needs to not spill on mobile screens. Think of it mobile first. how can I apply the spill when the screen gets big enough? or "turn on" a class for larger screens -->
             <div class="col-md-7 my-0 my-md-5 py-0 py-5 order-md-2 order-1">
-            <div class="position-relative card-spill">
-                <div class="card card-spill ">
-                  <div class="card-body">
+                <div class=" card card-body min-card">
                     <p class="card-title fs-2">Batgear</p>
                     <p><i class="mdi mdi-motorbike fs-2"></i> Lorem ipsum dolor sit.</p>
                     <p><i class="mdi mdi-jump-rope fs-2"></i> Lorem, ipsum dolor.</p>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
