@@ -35,6 +35,7 @@
 p {
   font-family: tiny5-regular;
 }
+
 @media screen and (min-width: 767.98px) {
   .min-card {
     position: absolute;
